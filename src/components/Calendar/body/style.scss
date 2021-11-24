@@ -1,0 +1,58 @@
+$classname: "calendar_body";
+$blackColor: #333;
+$whiteColor: #fff;
+$grayColor: #999;
+$redColor: #db3d44;
+.#{$classname} {
+  a {
+    display: inline-block;
+    text-align: center;
+    color: $blackColor;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    &.last,
+    &.next {
+      color: $grayColor;
+    }
+  }
+  .week {
+    display: inline-block;
+    width: 100%;
+    > a {
+      font-weight: 700;
+      cursor: default;
+    }
+  }
+  .calendar_main {
+    display: inline-block;
+    > a {
+      transition: 0.3s all ease-in-out;
+      border-radius: 50%;
+      &:hover {
+        background-color: $redColor;
+        color: $whiteColor;
+      }
+      &.active {
+        color: $redColor;
+        &:hover {
+          color: $whiteColor;
+        }
+      }
+    }
+  }
+
+  &.selectDay {
+    a {
+      width: calc(99% / 7);
+      line-height: 40px;
+    }
+  }
+  &.selectMonth,
+  &.selectYear {
+    a {
+      width: calc(100% / 4);
+      line-height: 70px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@import "./normalize.scss";
+
+$body-bg: #fff;
+$font-family-base: "微軟正黑體", "Microsoft JhengHei", "微軟雅黑體",
+  "Microsoft YaHei";
+$font-size-base: 16px;
+$line-height-base: 1.5;
+
+body {
+  box-sizing: border-box;
+  background-color: $body-bg;
+  font-size: $font-size-base;
+  font-family: $font-family-base;
+}
+
+a {
+  cursor: pointer;
+}

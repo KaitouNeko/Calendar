@@ -1,0 +1,16 @@
+$classname: "Calendar";
+$grayColor: #999;
+.#{$classname} {
+  display: inline-block;
+  width: 290px;
+  max-width: 100%;
+  min-width: 210px;
+  margin-top: 5px;
+  padding: 5px 5px 20px;
+  border: 1px solid $grayColor;
+  box-shadow: 0px 0px 2px $grayColor;
+  box-sizing: border-box;
+  &.datepicker {
+    display: none;
+  }
+}

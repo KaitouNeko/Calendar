@@ -1,0 +1,30 @@
+$classname: "Inpt";
+$grayColor: #999;
+$redColor: #db3d44;
+.#{$classname} {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  input {
+    display: block;
+    padding: 4px 4px 4px 27px;
+    border-radius: 5px;
+    border: 1px solid $grayColor;
+    &.err {
+      border: 1px solid $redColor;
+    }
+  }
+  &:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background-image: url("../../images/icon.png");
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    left: 5px;
+    bottom: 0px;
+    top: 0px;
+    margin: auto;
+  }
+}
