@@ -1,0 +1,22 @@
+$classname: "calendar_header";
+$blackColor: #333;
+.#{$classname} {
+  display: inline-block;
+  width: 100%;
+  > a {
+    display: inline-block;
+    width: calc(100% - 50px);
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: $blackColor;
+    font-weight: 900;
+    &.prevArrow,
+    &.nextArrow {
+      width: 25px;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
